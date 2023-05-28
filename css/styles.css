@@ -6,6 +6,7 @@
   --title-color: #2e2f42;
   --text-color: #434455;
   --text-footer-color: #f4f4fd;
+  --sm-footer-color: #ffffff;
   --hero-title-color: #ffffff;
 
   /* buttons & links */
@@ -30,6 +31,9 @@
 
   --filter-btn-background-color: #f4f4fd;
   --filter-btn-background-hover: #404bbf;
+
+  /* icons */
+  --sm-icon-color: #f4f4fd;
 }
 
 body {
@@ -275,7 +279,7 @@ img {
   padding: 120px 0;
 }
 
-team-list {
+.team-item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -348,6 +352,10 @@ team-list {
   background-color: var(--hero-btn-background-hover);
 }
 
+.team-sm-icon {
+  fill: var(--sm-icon-color);
+}
+
 /* ----Customers---- */
 .customers {
   padding: 120px 0;
@@ -404,6 +412,7 @@ team-list {
 
 .bottom-container {
   display: flex;
+  align-items: baseline;
 }
 
 .bottom-company-info {
@@ -444,7 +453,7 @@ team-list {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-footer-color);
+  color: var(--sm-footer-color);
   margin: 0 0 16px;
 }
 
@@ -471,8 +480,7 @@ team-list {
   background-color: #31d0aa;
 }
 .bottom-sm-icon {
-  width: 24px;
-  height: 24px;
+  fill: var(--sm-icon-color);
 }
 
 /* -----------------PORTFOLIO-FILTER---------------- */
@@ -525,16 +533,20 @@ team-list {
   width: calc((100% - 48px) / 3);
 }
 
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-}
-
-.portfolio-container:hover,
-.portfolio-container:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-name {
